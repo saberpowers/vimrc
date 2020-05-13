@@ -32,6 +32,9 @@ set spell
 " Syntax highlighting
 syntax on
 
+" Turn off text wrapping
+set wrap!
+
 " Solarized Dark
 syntax enable
 set background=dark
