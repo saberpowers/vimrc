@@ -1,0 +1,84 @@
+{
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.acceptSuggestionOnEnter": "off",
+    "editor.cursorStyle": "line",
+    "editor.fontFamily": "Monaco",
+    "editor.lineNumbers": "on",
+    "editor.rulers": [100],
+    "editor.tabSize": 2,
+    "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
+    "editor.wordWrap": "off",
+    "files.hotExit": "off",
+    "git.autofetch": true,
+    "latex-workshop.view.pdf.viewer": "tab",
+    "r.alwaysUseActiveTerminal": true,
+    "r.sessionWatcher": true,
+    "security.workspace.trust.untrustedFiles": "open",
+    "terminal.integrated.fontFamily": "Monaco",
+    "terminal.integrated.lineHeight": 1.05,
+    "window.restoreWindows": "none",
+    "workbench.sideBar.location": "left",
+    "workbench.colorTheme": "Solarized Dark",
+    "workbench.colorCustomizations": {
+      "editorCursor.foreground": "#cb4b16",
+      "terminalCursor.foreground": "#cb4b16",
+      "panel.border": "#93a1a1",
+    },
+    "workbench.preferredDarkColorTheme": "Solarized Dark",
+    "workbench.preferredHighContrastColorTheme": "Solarized Dark",
+    "workbench.preferredLightColorTheme": "Solarized Light",
+    "workbench.startupEditor": "none",
+    "editor.tokenColorCustomizations": {
+      "textMateRules": [
+        {
+          "scope": [
+            "entity.namespace.r",
+            "variable.other.r",
+            "variable.parameter.r",
+          ],
+          "settings": {
+            "foreground": "#bbbbbb"
+          }
+        },
+        {
+          "scope": [
+            "storage.type.r",   // list, data.frame, etc.
+            "variable.function.r",
+          ],
+          "settings": {
+            "foreground": "#268bd2"
+          }
+        },
+        {
+          "scope": "string.quoted.double.r",
+          "settings": {
+            "foreground": "#2aa198"
+          }
+        },
+        {
+          "scope": "constant.language.r",
+          "settings": {
+            "foreground": "#d33682"
+          }
+        },
+        {
+          "scope": [
+            "keyword.other.r",
+            "punctuation.section.brackets.double.begin.r",
+            "punctuation.section.brackets.double.end.r",
+            "punctuation.section.brackets.single.begin.r",
+            "punctuation.section.brackets.single.end.r",
+            "punctuation.section.braces.begin.r",
+            "punctuation.section.braces.end.r",
+            "punctuation.section.parens.begin.r",
+            "punctuation.section.parens.end.r",
+            "source.r",   // for commas and parens not recognized as any other scope
+          ],
+          "settings": {
+            "foreground": "#dc322f"
+          }
+        }
+      ]
+    },
+    "r.lsp.diagnostics": false
+  }
