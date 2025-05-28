@@ -53,5 +53,10 @@
     "key": "cmd+enter",
     "command": "-editor.action.insertLineAfter",
     "when": "editorTextFocus && !editorReadonly"
+  },
+  { // Toggle dark mode for PDF viewer
+    "key": "shift+cmd+d",
+    "command": "settings.cycle.toggleLatexInvert",
+    "when": "editorFocus"
   }
 ]

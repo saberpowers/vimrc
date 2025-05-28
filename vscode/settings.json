@@ -82,5 +82,15 @@
   },
   "r.lsp.diagnostics": false,
   "terminal.integrated.enableMultiLinePasteWarning": false,
-  "git.openRepositoryInParentFolders": "always"
+  "git.openRepositoryInParentFolders": "always",
+  "latex-workshop.view.pdf.invert": 1,              // for PDF viewer dark mode
+  "settings.cycle": [                               // for PDF viewer dark mode
+    {
+      "id": "toggleLatexInvert",
+      "values": [
+        { "latex-workshop.view.pdf.invert": 0 },
+        { "latex-workshop.view.pdf.invert": 1 }
+      ]
+    }
+  ]
 }
