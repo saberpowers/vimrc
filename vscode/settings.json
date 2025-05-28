@@ -1,11 +1,19 @@
 {
+  "[r]": {
+    "editor.tabSize": 2
+  },
+  "[latex]": {
+    "editor.tabSize": 2
+  },
+  "[python]": {
+    "editor.tabSize": 4
+  },
   "diffEditor.ignoreTrimWhitespace": false,
   "editor.acceptSuggestionOnEnter": "off",
   "editor.cursorStyle": "line",
   "editor.fontFamily": "Monaco",
   "editor.lineNumbers": "on",
   "editor.rulers": [100],
-  "editor.tabSize": 2,
   "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
   "editor.wordWrap": "off",
   "files.hotExit": "off",
