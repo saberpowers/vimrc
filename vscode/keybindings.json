@@ -39,6 +39,11 @@
     "command": "-python.execSelectionInTerminal",
     "when": "editorTextFocus && !findInputFocussed && !jupyter.ownsSelection && !notebookEditorFocused && !replaceInputFocussed && editorLangId == 'python'"
   },
+  { // Markdown render
+    "key": "cmd+enter",
+    "command": "extension.markdown-pdf.pdf",
+    "when": "editorTextFocus && editorLangId == 'markdown'"
+  },
   { // Don't add code cell below
     "key": "cmd+enter",
     "command": "-notebook.cell.insertCodeCellBelow",
