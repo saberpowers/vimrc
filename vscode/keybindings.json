@@ -1,57 +1,52 @@
 // Place your key bindings in this file to override the defaultsauto[]
 [
-  {
+  { // Launch interactive R session
     "key": "shift+cmd+r",
     "command": "r.createRTerm"
   },
-  {
+  { // LaTeX build
     "key": "cmd+enter",
     "command": "latex-workshop.build",
     "when": "config.latex-workshop.bind.altKeymap.enabled && editorLangId =~ /latex|rsweave|jlweave/"
   },
-  {
+  { // Disable default LaTeX build command
     "key": "cmd+l alt+b",
     "command": "-latex-workshop.build",
     "when": "config.latex-workshop.bind.altKeymap.enabled && editorLangId =~ /latex|rsweave|jlweave/"
   },
-  {
-    "key": "cmd+enter",
-    "command": "-notebook.cell.insertCodeCellBelow",
-    "when": "notebookCellListFocused && !inputFocus"
-  },
-  {
-    "key": "cmd+enter",
-    "command": "-editor.action.insertLineAfter",
-    "when": "editorTextFocus && !editorReadonly"
-  },
-  {
-    "key": "cmd+enter",
-    "command": "latex-workshop.build",
-    "when": "!config.latex-workshop.bind.altKeymap.enabled && editorLangId =~ /latex|rsweave|jlweave/"
-  },
-  {
+  { // Disable default LaTeX build command
     "key": "alt+cmd+b",
     "command": "-latex-workshop.build",
     "when": "!config.latex-workshop.bind.altKeymap.enabled && editorLangId =~ /latex|rsweave|jlweave/"
   },
-  {
+  { // Postgres run query
     "key": "cmd+enter",
     "command": "vscode-postgres.runQuery",
     "when": "editorLangId == 'postgres'"
   },
-  {
+  { // Disable default Postgress run query command
     "key": "f5",
     "command": "-vscode-postgres.runQuery",
     "when": "editorLangId == 'postgres'"
   },
-  {
+  { // Python execute selection
     "key": "cmd+enter",
     "command": "python.execSelectionInTerminal",
     "when": "editorTextFocus && !findInputFocussed && !jupyter.ownsSelection && !notebookEditorFocused && !replaceInputFocussed && editorLangId == 'python'"
   },
-  {
+  { // Disable default Python execute selection command
     "key": "shift+enter",
     "command": "-python.execSelectionInTerminal",
     "when": "editorTextFocus && !findInputFocussed && !jupyter.ownsSelection && !notebookEditorFocused && !replaceInputFocussed && editorLangId == 'python'"
+  },
+  { // Don't add code cell below
+    "key": "cmd+enter",
+    "command": "-notebook.cell.insertCodeCellBelow",
+    "when": "notebookCellListFocused && !inputFocus"
+  },
+  { // Don't add line below
+    "key": "cmd+enter",
+    "command": "-editor.action.insertLineAfter",
+    "when": "editorTextFocus && !editorReadonly"
   }
 ]
